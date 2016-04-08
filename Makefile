@@ -2,8 +2,8 @@
 
 # C++ flags
 CXXFLAGS := -std=c++11 -O2 -g -Wall -fmessage-length=0
-LIBS :=
-INCLUDES :=
+LIBS := $(shell pkg-config --libs gtkmm-2.4 gloox)
+INCLUDES := $(shell pkg-config --cflags gtkmm-2.4 gloox)
 
 # Project directories
 SRCDIR := src

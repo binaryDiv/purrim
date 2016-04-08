@@ -1,10 +1,15 @@
 #include <iostream>
+#include "JabberHandler.h"
 
 using namespace std;
 
 int main(int argc, char** argv) {
 	try {
 		// TODO do something
+		
+		JabberHandler jabber;
+		
+		jabber.connect("user@server.tld", "password");
 		
 		return 0;
 	}
